@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swap Two Numbers</title>
+</head>
+<body>
+    <h1>Swap Two Numbers (Without Using Extra Variable)</h1>
+    <h3 id="before"></h3>
+    <h3 id="after"></h3>
+
+    <script>
+        let num1 = Number(prompt("Enter Number 1 : "));
+        let num2 = Number(prompt("Enter Number 2 : "));
+
+        document.getElementById("before").innerText = "Before Swap → Number 1: " + num1 + " | Number 2: " + num2;
+
+        [num1, num2] = [num2, num1];
+
+        document.getElementById("after").innerText = "After Swap → Number 1: " + num1 + " | Number 2: " + num2;
+    </script>
+</body>
+</html>

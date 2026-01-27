@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leap Year</title>
+</head>
+
+<body>
+    <h1>Leap Year</h1>
+    <h3 id=start></h3>
+    <h3 id=end></h3>
+    <h3 id=leapYear></h3>
+
+    <script>
+        let start = Number(prompt("Enter the starting year: "));
+        let end = Number(prompt("Enter the Ending year : "));
+        let leapYear = ""
+        document.getElementById("start").innerHTML = "Start Year: " + start;
+        document.getElementById("end").innerHTML = "End Year: " + end;
+
+        if (start < end) {
+            for (let i = start; i <= end; i++) {
+                if ((i % 4 == 0 && i % 100 != 0) || (i % 400 == 0)) {
+                    leapYear = leapYear + i + " ";
+                }
+            }
+            document.getElementById("leapYear").innerHTML = "Leap Years: " + leapYear;
+        } else {
+            document.getElementById("leapYear").innerHTML = "Start year cannot be greater than end year.";
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+</head>
+<body>
+    <h1>Bill Calculator</h1>
+    <h3 id = radius></h3>
+    <h3 id = area></h3>
+    
+    <script>
+        let radius = Number(prompt("Enter radius of a circle: "));
+        let area = 3.14 * radius * radius;
+
+        document.getElementById("radius").innerText = "Radius of a Circle: " + radius;
+        document.getElementById("area").innerText = "Area of a Circle: " + area;
+
+    </script>
+</body>
+</html>

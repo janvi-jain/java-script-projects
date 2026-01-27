@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h1>Temperature Converter (Celsius to Fahrenheit)</h1>
+    <h3 id = c></h3>
+    <h3 id = f></h3>
+    
+    <script>
+        let c = Number(prompt("Enter Celsius : "));
+        let f = (c * (9/5)) + 32;
+
+        document.getElementById("c").innerText = "Celsius : " + c + " °C";
+        document.getElementById("f").innerText = "Fahrenheit : " + f + " °F";
+
+    </script>
+</body>
+</html>

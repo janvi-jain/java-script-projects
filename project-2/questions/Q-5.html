@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factors of Number</title>
+</head>
+
+<body>
+    <h1>Factors of Number</h1>
+    <h3 id=number></h3>
+    <h3 id=factor></h3>
+
+    <script>
+        let number = Number(prompt("Enter a Number : "));
+        let factor = ""
+
+        document.getElementById("number").innerHTML = "Number you Entered : " + number;
+
+
+        for (let i = 1; i <= number; i++) {
+            if (number % i == 0) {
+                factor = factor + i + " ";
+            }
+        }
+        document.getElementById("factor").innerHTML += "Factors of a number : " + factor;
+    </script>
+</body>
+
+</html>

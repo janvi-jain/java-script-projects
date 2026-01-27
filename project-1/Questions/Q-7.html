@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Converter</title>
+</head>
+<body>
+    <h1> Time Converter</h1>
+    <h3 id = second></h3>
+    <h3 id = convert></h3>
+    
+    <script>
+        let second = Number(prompt("Enter Seconds you want to convert in time : "));
+        let hour = parseInt(second / 3600);
+        let minute = parseInt((second % 3600) / 60);
+        let rsec =  parseInt(second % 60)
+        document.getElementById("second").innerText = "Seconds you entered : " + second;
+        document.getElementById("convert").innerText = "Converted (HH : MM : SS) : " + hour +" :" + minute + " :" + rsec ;
+
+    </script>
+</body>
+</html>

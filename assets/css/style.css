@@ -1,0 +1,41 @@
+/* ---- particles.js container ---- */ 
+
+#particles-js {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  
+    background-color: #181818; 
+    background-image: url(""); 
+    background-repeat: no-repeat; 
+    background-size: 20%; 
+    background-position: 50% 50%; 
+} 
+
+.v-h {
+    height:100vh;
+}
+
+.btn-bg {
+  background-image: linear-gradient(to bottom, rgb(199, 197, 197), rgb(66, 65, 65));
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.btn-bg:hover a{
+    color: rgb(227, 227, 227) !important;
+} 
+
+.que a {
+    border-radius: 5px;
+    max-width: 100% !important;
+    background-color: rgb(57, 55, 55);
+}
+
+.width {
+    width: 33vw;
+}
+
+

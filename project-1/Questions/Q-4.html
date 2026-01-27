@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of a Circle</title>
+</head>
+<body>
+    <h1>Area of a Circle</h1>
+    <h3 id = item1></h3>
+    <h3 id = item2></h3>
+    <h3 id = item3></h3>
+    <h3 id = total></h3>
+    
+    <script>
+        let item1 = Number(prompt("Enter item 1 price : "));
+        let item2 = Number(prompt("Enter item 2 price : "));
+        let item3 = Number(prompt("Enter item 3 price : "));
+        let total = item1 + item2 + item3;
+
+        document.getElementById("item1").innerText = " item 1 price : " + item1;
+        document.getElementById("item2").innerText = "item 2 price : " + item2;
+        document.getElementById("item3").innerText = "item 3 price : " + item3;
+        document.getElementById("total").innerText = "Bill Total : " + total;
+
+    </script>
+</body>
+</html>

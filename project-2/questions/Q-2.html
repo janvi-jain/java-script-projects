@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+</head>
+
+<body>
+    <h1>Multiplication Table</h1>
+    <h3 id=number></h3>
+    <h3 id=table></h3>
+
+    <script>
+        let number = Number(prompt("Enter a Number you want a table : "));
+        let table = ""
+
+        document.getElementById("number").innerHTML = "Multiplication Table of : " + number;
+
+        for (let i = 1; i <= 10; i++) {
+            table += number + " × " + i + " = " + (number * i) + "<br>";
+        }
+        document.getElementById("table").innerHTML = table;
+
+    </script>
+</body>
+
+</html>

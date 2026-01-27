@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+</head>
+<body>
+    <h1>Age Calculator</h1>
+    <h3 id = byear></h3>
+    <h3 id = cyear></h3>
+    <h3 id = age></h3>
+    
+    <script>
+        let byear = Number(prompt("Enter Your Birth Year : "));
+        let cyear = Number(prompt("Enter Current Year : "));
+        let age = cyear - byear;        
+
+        document.getElementById("byear").innerText = "Your Birth Year : " + byear;
+        document.getElementById("cyear").innerText = "Current Year : " + cyear;
+        document.getElementById("age").innerText = "your Age : " + age;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <h1>Currency Converter (INR to USD)</h1>
+    <h3 id = inr></h3>
+    <h3 id = usd></h3>
+    
+    <script>
+        let inr = Number(prompt("Enter Indian Rupees (INR) : "));
+        let usd = inr / 91.03//(current exchage rate- 2026)
+
+        document.getElementById("inr").innerText = "Indian Rupees (INR) : " + inr + " ₹";
+        document.getElementById("usd").innerText = "US Dollars (USD) : " + usd.toFixed(2) + " $";
+
+    </script>
+</body>
+</html>

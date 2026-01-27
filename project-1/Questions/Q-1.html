@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Calculator</title>
+</head>
+<body>
+    <h1>Salary Calculator</h1>
+    <h3 id = salary></h3>
+    <h3 id = hra></h3>
+    <h3 id = da></h3>
+    <h3 id = ta></h3>
+    <h3 id = gsalary></h3>
+
+    <script>
+        let salaryVal = Number(prompt("Enter Your Base Salary : "));
+        let hraVal = Number(prompt("Enter Your House rent allowance (HRA) : "));
+        let daVal = Number(prompt("Enter Your Dearness allowance (DA) : "));
+        let taVal = Number(prompt("Enter Your Travel allowance (TA) : "));
+        let hra = (hraVal / 100 ) * salaryVal;  
+        let da = (daVal / 100 ) * salaryVal;  
+        let ta = (taVal / 100 ) * salaryVal;  
+        let gsalaryval = salaryVal + hra + da + ta;
+
+        document.getElementById("salary").innerText = "Your Base Salary : " + salaryVal;
+        document.getElementById("hra").innerText = "House rent allowance (HRA) : " + hraVal + "%";
+        document.getElementById("da").innerText = "Dearness allowance (DA): " + daVal + "%";
+        document.getElementById("ta").innerText = "Travel allowance (DA): " + taVal + "%";
+        document.getElementById("gsalary").innerHTML = "Gross Salary : " + gsalaryval;
+
+    </script>
+</body>
+</html>
