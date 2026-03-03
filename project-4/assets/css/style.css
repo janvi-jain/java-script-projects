@@ -1,0 +1,195 @@
+*{
+  list-style: none;
+}
+
+:root{
+    --grey-color--:#687188 ;
+    --red-color--:#ff324d ;
+    --roboto-- : 'Roboto', sans-serif;
+    --poppins-- : 'Poppins', sans-serif;
+}
+
+.line {
+  color: #a3a0a0 !important;
+}
+.top1 {
+    top: 14px;
+    left: 25px;
+}
+
+.header-menu div:hover {
+  cursor: pointer;
+  color: var(--red-color--) !important;
+}
+
+.header-menu div{
+  font-family: var(--poppins--) !important;
+}
+
+.header-font li {
+  font-family: var(--poppins--) !important;
+}
+
+.header-menu1 li:hover {
+  color: var(--red-color--) !important;
+
+}
+
+.dropdown-hover-red .nav-link:hover {
+  color: red !important;
+}
+
+.sh-size {
+  font-size: 20px;
+}
+
+.badge {
+  padding: 2px 5px !important;
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.navbar-nav {
+  cursor: pointer;
+}
+
+.badge {
+ padding: 2px 8px;
+z-index: 1;
+}
+
+.card {
+    border: none !important;
+    cursor: pointer;
+}
+
+.main-text {
+    font-family: var(--roboto--);
+}
+
+.main-menu {
+    font-family: var(--poppins--);
+}
+
+.product-name {
+    font-family: var(--roboto--);
+}
+
+.flag {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+}
+
+.menu {
+  color: var(--red-color--) !important;
+}
+
+.top-menu h5:hover {
+  color: var(--red-color--) !important;
+}
+
+.price {
+    color: var(--red-color--) !important;
+    font-family: var(--poppins--);
+}
+
+.og-price,.dis  {
+    font-size: 14px !important;
+    color: var(--grey-color--);
+    font-family: var(--poppins--);
+}
+
+.qty {
+    /* font-size: 13px !important; */
+    color: var(--grey-color--);
+    font-family: var(--poppins--);
+}
+
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.image-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.20); 
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+.hover-icons {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);  
+  display: flex;
+  gap: 10px;
+  opacity: 0; 
+  transition: opacity 0.3s linear;
+}
+
+.card:hover .hover-icons {
+  opacity: 1;
+}
+
+.hover-icons i {
+  background: white;
+  padding: 7px 14px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.hover-icons i:hover {
+  background:var(--red-color--);
+}
+
+.colours {
+  position: absolute;
+  bottom: 3px;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+.card:hover .colours {
+  opacity: 1;
+}
+
+.colours li {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);
+  cursor: pointer
+}
+.rating-wrapper {
+  opacity: 1;
+}
+
+.card:hover .rating-wrapper {
+  opacity:0 ;
+}
+
+
+
+
