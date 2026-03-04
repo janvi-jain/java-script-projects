@@ -5,19 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Factors of Number</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+            width: 450px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 25px;
+            color: #333;
+        }
+
+        #number {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #ff4d6d;
+        }
+
+        #factor {
+            margin-top: 20px;
+            padding: 15px;
+            background: #fff0f3;
+            border-radius: 10px;
+            font-family: monospace;
+            line-height: 1.8;
+            color: #444;
+            word-wrap: break-word;
+            box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.05);
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Factors of Number</h1>
-    <h3 id=number></h3>
-    <h3 id=factor></h3>
+
+    <div class="container">
+        <h1>Factors of Number</h1>
+        <h3 id="number"></h3>
+        <h3 id="factor"></h3>
+    </div>
 
     <script>
         let number = Number(prompt("Enter a Number : "));
         let factor = ""
 
         document.getElementById("number").innerHTML = "Number you Entered : " + number;
-
 
         for (let i = 1; i <= number; i++) {
             if (number % i == 0) {
@@ -26,6 +72,7 @@
         }
         document.getElementById("factor").innerHTML += "Factors of a number : " + factor;
     </script>
+
 </body>
 
 </html>
