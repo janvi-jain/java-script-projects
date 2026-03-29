@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products</title>
+
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid px-4">
+
+      <!-- LEFT -->
+      <div class="d-flex align-items-center">
+
+        <!-- Back -->
+        <a href="index.html" class="nav-link text-secondary me-4">
+          ← BACK
+        </a>
+
+        <span class="text-secondary me-4"> | </span>
+
+        <!-- Logo -->
+        <a class="navbar-brand d-flex align-items-center gap-2 m-0" href="./index.html">
+          <div class="logo-box">
+            <i class="bi bi-bag-fill"></i>
+          </div>
+          <span class="fw-semibold text-white">Store</span>
+        </a>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="d-flex align-items-center ms-auto gap-3">
+
+        <!-- Search -->
+        <form class="d-flex align-items-center search-wrapper">
+          <i class="bi bi-search search-icon"></i>
+          <input class="form-control border-0 shadow-none" id="searchBox" type="search"
+            placeholder="Search products...">
+        </form>
+
+        <!-- Cart -->
+        <div class="cart-icon position-relative" id="showcart">
+          <i class="bi bi-bag"></i>
+          <span class="cart-badge" id="badge"></span>
+        </div>
+
+        <div class="dropdown">
+          <button class="btn add-btn px-4 text-uppercase dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <i class="bi bi-arrow-down-up"></i> Sort
+          </button>
+          <ul class="dropdown-menu text-white background">
+            <li><a class="dropdown-item text-white" id="sortAsc">By Price (Ascending)</a></li>
+            <li><a class="dropdown-item text-white" id="sortDesc">By Price (Decending)</a></li>
+            <li><a class="dropdown-item text-white" id="sortName">By Name</a></li>
+          </ul>
+        </div>
+
+        <!-- <button class="btn " id="sortBtn"> </button> -->
+        <!-- Add Button -->
+        <a href="index.html" class="btn add-btn">
+          + ADD PRODUCT
+        </a>
+
+      </div>
+
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="row g-4" id="productList"></div>
+  </div>
+  <div class="modal fade" id="cartModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title">Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body" id="cartData">
+          <!-- cart items will come here -->
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/product.js"></script>
+  <script src="./assets/js/bootsrap.bundle.min.js"></script>
+</body>
+
+</html>
