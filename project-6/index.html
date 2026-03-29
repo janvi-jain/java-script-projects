@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container-center">
+        <div class="form-card">
+
+            <h3>Add a new product</h3>
+            <p class="">Fill in the details below to publish</p>
+
+            <form id="productForm">
+
+                <div class="input-box">
+                    <label>PRODUCT NAME</label>
+                    <input type="text" id="prdName" placeholder="e.g. Nike Air Max 270">
+                </div>
+
+                <div class="input-box">
+                    <label>PRICE (₹)</label>
+                    <input type="number" id="prdPrice" placeholder="e.g. 4999">
+                </div>
+
+                <div class="input-box">
+                    <label>IMAGE URL</label>
+                    <input type="text" id="prdUrl" placeholder="https://example.com/image.jpg">
+                </div>
+
+                <button class="btn-glow">🚀 Publish to Store</button>
+            </form>
+            <div class="toast-bar" id="toast">
+                <div class="t-dot"></div>
+                Product published!
+            </div>
+
+
+
+        </div>
+        <div class="text-center mt-3">
+            <a href="product.html" class="btn view-btn">
+                👀 View Products
+            </a>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+
+</html>
