@@ -1,0 +1,36 @@
+.gallery {
+    min-height: 80vh;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.accordion-button {
+    background: #212529;
+    color: white !important;
+    border: none;
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: transparent !important;
+    /* background: #0d6efd; */
+}
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+.list-group-item {
+    background: #2c3034;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.accordion-item {
+    border-radius: 8px;
+    overflow: hidden;
+}
